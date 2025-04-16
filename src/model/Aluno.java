@@ -22,5 +22,12 @@ public class Aluno {
         return calcularMedia() >= 7.0;
     }
 
+    public void exibirDados(){
+        System.out.println("Nome: " + nomeAluno);
+        System.out.println("Idade: " + idadeAluno);
+        System.out.println("Média %.2f: " + calcularMedia());
+        System.out.println("Aprovado: " + (aprovado() ? "Sim" : "Não"));
+    }
+
 
 }
